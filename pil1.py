@@ -5,7 +5,8 @@ name = input("Enter image path:")
 try:
     im = Image.open(name)
 except:
-    print("File not found/Invalid name.")    
+    print("File not found/Invalid name.")
+    exit()    
 x = 0
 while x != "5":
     x = input("1.Rotate, 2.Resize, 3.Show, 4.Save as, 5.Close:")
