@@ -1,4 +1,4 @@
-#!/usrbin/env python3
+#!/usr/bin/env python3
 from PIL import Image
 
 name = input("Enter image path:")
