@@ -1,1 +1,8 @@
+Images/*.save
+*.save
+Images" >> .gitignore
+printf *.savenImages"*.save
+Images" >> .gitignore
+
+printf *.savenImages"Images/
 Images/
