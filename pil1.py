@@ -1,8 +1,9 @@
+#!/usrbin/env python3
 from PIL import Image
 
-name = input("Enter image name:")
+name = input("Enter image path:")
 try:
-    im = Image.open("horse.jpg")
+    im = Image.open(name)
 except:
     print("File not found/Invalid name.")    
 x = 0
@@ -18,7 +19,7 @@ while x != "5":
     elif x == "3":
         im.show()
     elif x == "4":
-        new_name = input("Enter new name:")
+        new_name = input("Enter name/path to save:")
         if new_name == None: new_name = name
         im.save(new_name)
     elif x == "5": im.close()
